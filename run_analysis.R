@@ -44,7 +44,7 @@ run_analysis <- function() {
   ##Group data by subjectID and Activity and take the mean of those observations
   outputData<-aggregate(.~Subject_ID+Activity, data=completeData, mean)
   ##Save dataset as outputDataset.txt
-  write.table(outputData, "./UCI HAR Dataset/outputDataset.txt")
+  #write.table(outputData, "./UCI HAR Dataset/outputDataset.txt")
   
-  return()
+  return(outputData)
 }
